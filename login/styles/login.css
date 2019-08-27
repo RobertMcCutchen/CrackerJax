@@ -1,0 +1,170 @@
+body {
+  height: 100%;
+  background: radial-gradient(circle, #263859, #17223b);
+  padding: 0;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .pageHeading {
+  font-family: 'Playball', cursive;
+  color: #ff6768;
+  font-size: 18vw;
+}
+
+.modal .subHeading {
+  color: #ff6768;
+  font-size: 8vw;
+}
+
+.modal .inputContainer {
+  width: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .inputContainer div:first-child {
+  margin-top: 0;
+}
+
+.modal .inputContainer div:last-child {
+  margin-top: 20px;
+}
+
+.modal .label {
+  color: #ff6768;
+  font-size: 5vw;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.modal input {
+  outline: none;
+  font-size: 7vw;
+  color: #ff6768;
+  height: 70px;
+  padding: 10px;
+  background: #263859;
+  border: 5px solid #6b778d;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.modal .mainButton {
+  font-size: 40px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #263859;
+  height: 70px;
+  width: 200px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #6b778d;
+}
+
+.inputDiv {
+  margin-top: 30px;
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.bottomDiv {
+  width: calc(100% - 10px);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bottomDiv .linkText {
+  color: #ff6768;
+  font-size: 5vw;
+  background: none;
+}
+
+.bottomDiv button {
+  font-size: 5vw;
+  color: #c83660;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.fbErrorSpan {
+  color: #c0392b;
+  font-size: 0.5em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.errorSpan {
+  font-size: 4.5vw;
+  color: #c83660;
+}
+
+#loginModal .pageHeading {
+  margin-top: 50px;
+}
+
+#loginModal .inputContainer {
+  margin-top: 50px;
+}
+
+#registerModal .inputContainer {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=login.css.map */

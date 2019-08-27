@@ -1,0 +1,138 @@
+body {
+  height: 100%;
+  background: radial-gradient(circle,#263859, #17223b);
+  padding: 0;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .pageHeading {
+    font-family: 'Playball', cursive;
+    color: #ff6768;
+    font-size: 18vw;
+  }
+
+  .subHeading {
+    color: #ff6768;
+    font-size: 8vw;
+  }
+
+  .inputContainer {
+    width: calc(100% - 10px);
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputContainer div:first-child {
+    margin-top: 0;
+  }
+
+  .inputContainer div:last-child {
+    margin-top: 20px;
+  }
+
+  .label {
+    color: #ff6768;
+    font-size: 5vw;
+    align-self: flex-start;
+  }
+
+  input {
+    outline: none;
+    font-size: 7vw;
+    color: #ff6768;
+    height: 70px;
+    padding: 10px;
+    background: #263859;
+    border: 5px solid #6b778d;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .mainButton {
+    font-size: 40px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #263859;
+    height: 70px;
+    width: 200px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #6b778d;
+    // box-shadow: 10px 10px 5px #c83660;
+  }
+}
+
+.inputDiv {
+  margin-top: 30px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.bottomDiv {
+  width: calc(100% - 10px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .linkDiv {
+    // margin-top: 20px;
+  }
+
+  .linkText {
+    color: #ff6768;
+    font-size: 5vw;
+    background: none;
+  }
+
+  button {
+    font-size: 5vw;
+    color: #c83660;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
+
+.fbErrorSpan {
+  color: #c0392b;
+  font-size: 0.5em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.errorSpan {
+  font-size: 4.5vw;
+  color: #c83660;
+}
+
+#loginModal {
+  .pageHeading {
+    margin-top: 50px;
+  }
+  .inputContainer {
+    margin-top: 50px;
+  }
+}
+
+#registerModal .inputContainer {
+  margin-top: 50px;
+}

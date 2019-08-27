@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login/styles/login.css">
+        <script src="https://kit.fontawesome.com/a30afdad7d.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100,300,400,500,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+    </head>
+    <body>
+
+
+        <div id="loginModal" class="modal">
+
+            <span class='pageHeading'>CrackerJax</span>
+
+            <div class="inputContainer">
+                <div class="inputDiv">
+                    <span class="label">Email</span>
+                    <input type="text" id="loginEmailInput" placeholder="TMorello@aol.com">
+                </div>
+
+                <div class="inputDiv">
+                    <span class="label">Password</span>
+                    <input type="password" id="loginPasswordInput" placeholder="password">
+                </div>
+            </div>
+
+            <div class="bottomDiv">
+                <button id="loginButton" class="mainButton">Log In</button>
+
+                <span id="loginFirebaseErrorSpan" class="errorSpan fbErrorSpan"></span>
+                <div class="linkDiv">
+                    <span class="linkText">Need an account? </span>
+                    <button id="displayRegisterButton">Register here!</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+    <div id="registerModal" class="modal hidden">
+      <span class="pageHeading">CrackerJax</span>
+      <span class="subHeading">Create your Account!</span>
+
+      <div class="inputContainer">
+        <div class="inputDiv">
+          <span class="label">Full Name</span>
+          <input type="text" id="regNameInput" placeholder="Keith Moon" />
+        </div>
+        <div class="inputDiv">
+          <span class="label">Email</span>
+          <input
+            type="text"
+            name="email"
+            id="regEmailInput"
+            placeholder="WhoRU1972@gmail.com"
+          />
+        </div>
+
+        <div class="inputDiv">
+          <span class="label">Password</span>
+          <input type="password" id="regPasswordInput" placeholder="password" />
+          <span id="regPasswordDetailsSpan" class="errorSpan">Password must be >7 characters</span>
+        </div>
+
+        <div class="inputDiv">
+          <span class="label">Re-Enter Password</span>
+          <input
+            type="password"
+            id="regPasswordConfirmInput"
+            placeholder="password"
+            required
+          />
+          <span id="regPasswordErrorSpan" class="errorSpan"></span>
+        </div>
+      </div>
+
+      <div class="bottomDiv">
+        <button id="registerButton" class="mainButton" disabled>
+          Register
+        </button>
+        <span id="regFirebaseErrorSpan" class="errorSpan fbErrorSpan"></span>
+        <div class="linkDiv">
+          <span class="linkText">Already registered? </span>
+          <button id="displayLoginButton">Log in here!</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDdSOc5K9HEPSmc32Yvko5nZ2ZnHvOVm5o",
+        authDomain: "crackerjax-8b552.firebaseapp.com",
+        databaseURL: "https://crackerjax-8b552.firebaseio.com",
+        projectId: "crackerjax-8b552",
+        storageBucket: "",
+        messagingSenderId: "314805880664",
+        appId: "1:314805880664:web:b6b1109a4d46e13email"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="login/scripts/login.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  </body>
+</html>
